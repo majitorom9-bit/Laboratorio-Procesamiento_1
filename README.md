@@ -3,28 +3,55 @@
 ## Objetivo de la practica 
 Caracterizar una señal biomédica a partir del análisis de sus parámetros estadísticos, con el propósito de describir cuantitativamente su comportamiento y relacionarlo con su significado fisiológico
 ## Descripcion de la practica
-Durante la presente práctica de laboratorio, se calcularon parámetros estadísticos fundamentales de señales biomédicas, tanto reales como sintéticas, con el fin de realizar una descripción cuantitativa de su comportamiento. Asimismo, se buscó establecer posibles relaciones entre los valores estadísticos obtenidos y los procesos fisiológicos subyacentes que dan origen a dichas señales.
+En esta práctica  de laboratorio, se calcularon parámetros estadísticos fundamentales de señales biomédicas, tanto reales como sintéticas, con el fin de realizar una descripción cuantitativa de su comportamiento. Asimismo, se buscó establecer posibles relaciones entre los valores estadísticos obtenidos y los procesos fisiológicos subyacentes que dan origen a dichas señales.
 ## Procedimiento 
-Para el desarrollo de la presente práctica, se realizó la descarga de una señal fisiológica desde el sitio de physionet (https://physionet.org/content/pwave/1.0.0/100.dat) muestreadas a 360 Hz, con el objetivo de calcular los parámetros estadísticos que permiten describirla cuantitativamente, explicando la utilidad y el significado de cada uno de ellos dentro del análisis de las señales.
+Para el desarrollo de la práctica, se realizó la descarga de una señal fisiológica desde el sitio de physionet (https://physionet.org/content/pwave/1.0.0/100.dat) muestreadas a 360 Hz, con el objetivo de calcular los parámetros estadísticos que permiten describirla cuantitativamente, explicando la utilidad y el significado de cada uno de ellos dentro del análisis de las señales.
 Las señales obtenidas en un entorno real, como es el caso de las señales biomédicas, se caracterizan por contener información relevante asociada a parámetros como la amplitud y la frecuencia. No obstante, también pueden incluir componentes no deseados que alteran su comportamiento, conocidos como ruido, los cuales pueden afectar la interpretación adecuada de la señal. 
 ### PARTE A 
 1. **Obtener la señal**
-Se ingreso a la base de datos physionet y se descargo una señal fisiologica ECG, se utilizo la señal del registro
+Se ingreso a la base de datos physionet y se descargo una señal fisiologica ECG, se utilizo la señal del registro: https://physionet.org/content/pwave/1.0.0/#files-panel el cual contiene registros de electrocardiograma (ECG) provenientes de la "MIT-BIH Arrhythmia Database". Este conjunto se caracteriza por incluir anotaciones detalladas de la onda P, que representa la despolarización auricular, lo que permite un análisis más preciso de la actividad eléctrica del corazón y facilita el estudio de alteraciones del ritmo cardíaco. Finalmente se graficó la señal en el dominio del tiempo.
 
 2. **Calculos estadisticos descriptivos**
-Se calcularon los datos estadisticos de dos maneras diferentes cuando, la primera vez es programando las formulas desde cero, y la segunda vez, haciendo uso de las funciones predefinidas con python.
+Se calcularon los datos estadisticos de dos maneras diferentes, la primera vez que se dessarrolló programando las formulas  haciendo uso de las funciones predefinidas con python y la segunda vez programando las funciones desde cero.
 
 **PARTE 1**
+
+   Para la elaboración de esta primera parte se hizo uso de las funciones predeterminadas de python para estadisticos y el código utilizado fue:
+   ```python
+print(f"Datos con funciones")
+
+#media
+media=np.mean(ecg_1)
+print (f"Media: {media} ")
+
+#mediana
+mediana=np.median(ecg_1)
+print (f"Mediana: {mediana} ")
+
+#desviación estandar
+desviacion_muestra=np.std(ecg_1, ddof=1)
+print (f"Desviacion estandar: {desviacion_muestra} ")
+
+#coeficiente de variacion
+coef_var = (desviacion_muestra / abs(media)) * 100
+print(f"Coeficiente de variacion: {coef_var:.2f}%")
+   ```
+Dandonos como resultados los siguientes valores para cada estadístico calculado:
+
  - Media de la señal: -0.30629897692306546
  - Desviacion estandar: 0.1931996907525729
  - Coeficeinte de variacion: 63.08%
  - Curtosis:28.413018422874092
+
+Y también se graficó su histograma que se muestra a continuación:
+
+<img width="634" height="469" alt="image" src="https://github.com/user-attachments/assets/2b00e4a8-9580-475a-96d7-37dad18fa6ba" />
+
    
 **PARTE 2**
  - Media de la señal: -0.3062989769230769 
  - Desviacion estandar: 0.19319969075242077 
  - Coeficeinte de variacion: 63.08%
- - Asimetria (Skewness): Negativa
  - Curtosis: 28.413018422958583
  - Histograma
    
