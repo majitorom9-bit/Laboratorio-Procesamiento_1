@@ -1,9 +1,8 @@
 # Laboratorio-Procesamiento_1
 
 ## Objetivo de la practica 
-Caracterizar una señal biomédica a partir del análisis de sus parámetros estadísticos, con el propósito de describir cuantitativamente su comportamiento y relacionarlo con su significado fisiológico
-## Descripcion de la practica
-En esta práctica  de laboratorio, se calcularon parámetros estadísticos fundamentales de señales biomédicas, tanto reales como sintéticas, con el fin de realizar una descripción cuantitativa de su comportamiento. Asimismo, se buscó establecer posibles relaciones entre los valores estadísticos obtenidos y los procesos fisiológicos subyacentes que dan origen a dichas señales.
+Analizar estadísticamente una señal fisiológica, calcular sus principales parámetros descriptivos, y comparar los resultados entre señales capturadas con hardware, aplicando también el concepto de relación señal-ruido.
+
 ## Procedimiento 
 Para el desarrollo de la práctica, se realizó la descarga de una señal fisiológica desde el sitio de physionet (https://physionet.org/content/pwave/1.0.0/100.dat) muestreadas a 360 Hz, con el objetivo de calcular los parámetros estadísticos que permiten describirla cuantitativamente, explicando la utilidad y el significado de cada uno de ellos dentro del análisis de las señales.
 Las señales obtenidas en un entorno real, como es el caso de las señales biomédicas, se caracterizan por contener información relevante asociada a parámetros como la amplitud y la frecuencia. No obstante, también pueden incluir componentes no deseados que alteran su comportamiento, conocidos como ruido, los cuales pueden afectar la interpretación adecuada de la señal. 
