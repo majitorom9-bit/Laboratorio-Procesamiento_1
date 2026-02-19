@@ -49,13 +49,71 @@ Y también se graficó su histograma que se muestra a continuación:
 
    
 **PARTE 2**
+Ahora bien, para estos cálculos se calcularon los estadísticos desde cero y se utilizó el siguiente código:
+ ```python
+print("Datos sin funciones")
+
+n = len(ecg_1)
+
+
+# MEDIA
+
+suma = 0
+for valor in ecg_1:
+    suma += valor
+
+media = suma / n
+print(f"Media: {media}")
+
+
+# MEDIANA
+
+datos_ordenados = sorted(ecg_1)
+
+if n % 2 == 0:
+    mediana = (datos_ordenados[n//2 - 1] + datos_ordenados[n//2]) / 2
+else:
+    mediana = datos_ordenados[n//2]
+
+print(f"Mediana: {mediana}")
+
+
+# DESVIACIÓN ESTÁNDAR MUESTRAL
+
+suma_cuadrados = 0
+for valor in ecg_1:
+    suma_cuadrados += (valor - media) ** 2
+
+varianza = suma_cuadrados / (n - 1)
+desviacion = varianza ** 0.5
+
+print(f"Desviacion estandar: {desviacion}")
+
+
+# COEFICIENTE DE VARIACIÓN
+
+coef_variacion = (desviacion / abs(media)) * 100
+print(f"Coeficiente de variacion: {coef_variacion:.2f}%")
+
+
+# CURTOSIS
+
+suma_cuarta = 0
+for valor in ecg_1:
+    suma_cuarta += (valor - media) ** 4
+
+curtosis = (suma_cuarta / n) / (varianza ** 2)
+
+print(f"Curtosis: {curtosis}")
+
+ ```
+Finalemnte los resultados obtenidos fueron: 
+
  - Media de la señal: -0.3062989769230769 
  - Desviacion estandar: 0.19319969075242077 
  - Coeficeinte de variacion: 63.08%
  - Curtosis: 28.413018422958583
- - Histograma
-   
-   <img width="423" height="336" alt="Histograma 1" src="https://github.com/user-attachments/assets/58a7af70-22f2-4d79-b60a-13c17c9fe57a" />
+ 
    
 3. **Diagrama de flujo**
    
