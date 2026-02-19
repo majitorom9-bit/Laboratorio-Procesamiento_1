@@ -51,7 +51,7 @@ Y también se graficó su histograma que se muestra a continuación:
 **PARTE 2**
 
 
-Ahora bien, para estos cálculos se calcularon los estadísticos desde cero y se utilizó el siguiente código:
+Ahora bien, para estos cálculos se realizó la elaboración de los estadísticos desde cero y se utilizó el siguiente código:
  ```python
 print("Datos sin funciones")
 
