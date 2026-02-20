@@ -19,6 +19,8 @@ Se calcularon los datos estadisticos de dos maneras diferentes, la primera vez q
 **PARTE 1**
 
    Para la elaboración de esta primera parte se hizo uso de las funciones predeterminadas de python para estadisticos y el código utilizado fue:
+
+   
    ```python
 print(f"Datos con funciones")
 
@@ -192,6 +194,53 @@ Se calculo la relacion señal ruido para cada caso de contaminacion con los ruid
   - SNR Ruido Gaussiano: 8.39 dB
   - SNR Ruido Impulso: 2.49 dB
   - SNR Ruido Tipo Artefacto: 0.57 dB
+    
+Código utilizado para el cálculo de los SNR:
+
+ ```python
+
+import numpy as np
+
+print("SNR (sin componente DC)")
+
+
+# RMS quitando el promedio
+
+def rms_ac(x):
+    x = np.asarray(x, dtype=float)
+    x = x - np.mean(x)   # quitar componente DC
+    return np.sqrt(np.mean(x**2))
+
+
+# SNR en dB
+
+def snr_db_from_pair(y_clean, y_noisy):
+    y_clean = np.asarray(y_clean, dtype=float)
+    y_noisy = np.asarray(y_noisy, dtype=float)
+
+    ruido = y_noisy - y_clean
+
+    rc = rms_ac(y_clean)
+    rr = rms_ac(ruido)
+
+    if rr == 0:
+        return np.inf
+
+    return 20 * np.log10(rc / rr)
+
+
+# Cálculo SNR
+
+snr_gauss   = snr_db_from_pair(adc_v, G_v)
+snr_art     = snr_db_from_pair(adc_v, A_v)
+snr_impulso = snr_db_from_pair(adc_v, I_v)
+
+print(f"SNR Ruido Gaussiano: {snr_gauss:.2f} dB")
+print(f"SNR Ruido tipo artefacto: {snr_art:.2f} dB")
+print(f"SNR Ruido de impulso: {snr_impulso:.2f} dB")
+
+ ```
+
 
 3. **Diagramas de flujo**
 
