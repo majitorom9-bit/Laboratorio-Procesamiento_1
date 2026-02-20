@@ -31,20 +31,33 @@ print (f"Mediana: {mediana} ")
 desviacion_muestra=np.std(ecg_1, ddof=1)
 print (f"Desviacion estandar: {desviacion_muestra} ")
 
+# asimetría (skewness)
+asimetria = skew(ecg_1, bias=False)
+print(f"Asimetria (skewness): {asimetria}")
+
 #coeficiente de variacion
 coef_var = (desviacion_muestra / abs(media)) * 100
-print(f"Coeficiente de variacion: {coef_var:.2f}%")
+print(f"Coeficiente de variacion: {coef_var:.2f}%") 
+
+#curtosis
+n=len(ecg_1)
+curtosis=np.sum(((ecg_1-media)/desviacion_muestra)**4)/n
+print(f"Curtosis: {curtosis}")
    ```
 Dandonos como resultados los siguientes valores para cada estadístico calculado:
 
- - Media de la señal: -0.30629897692306546
- - Desviacion estandar: 0.1931996907525729
- - Coeficeinte de variacion: 63.08%
- - Curtosis:28.413018422874092
+
+- Media: -0.3062989769230769 
+- Mediana: -0.335 
+- Desviacion estandar: 0.19319969075242077 
+- Asimetria (skewness): 4.4261478025110375
+- Coeficiente de variacion: 63.08%
+- Curtosis: 28.413018422958583
 
 Y también se graficó su histograma que se muestra a continuación:
 
-<img width="634" height="469" alt="image" src="https://github.com/user-attachments/assets/2b00e4a8-9580-475a-96d7-37dad18fa6ba" />
+<img width="570" height="425" alt="image" src="https://github.com/user-attachments/assets/c782b76f-2f18-4148-8859-a82a704da931" />
+
 
    
 **PARTE 2**
@@ -79,7 +92,7 @@ else:
 print(f"Mediana: {mediana}")
 
 
-# DESVIACIÓN ESTÁNDAR MUESTRAL
+# DESVIACIÓN ESTÁNDAR
 
 suma_cuadrados = 0
 for valor in ecg_1:
@@ -90,6 +103,14 @@ desviacion = varianza ** 0.5
 
 print(f"Desviacion estandar: {desviacion}")
 
+# ASIMETRÍA (SKEWNESS)
+suma_cubo = 0
+for valor in ecg_1:
+    suma_cubo += ((valor - media) / desviacion) ** 3
+
+asimetria = (n / ((n - 1) * (n - 2))) * suma_cubo
+
+print(f"Asimetria: {asimetria}")
 
 # COEFICIENTE DE VARIACIÓN
 
@@ -110,11 +131,12 @@ print(f"Curtosis: {curtosis}")
  ```
 Finalemnte los resultados obtenidos fueron: 
 
- - Media de la señal: -0.3062989769230769 
- - Desviacion estandar: 0.19319969075242077 
- - Coeficeinte de variacion: 63.08%
- - Curtosis: 28.413018422958583
- 
+- Media: -0.30629897692306546
+- Mediana: -0.335
+- Desviacion estandar: 0.1931996907525729
+- Asimetria: 4.426147802499588
+- Coeficiente de variacion: 63.08%
+- Curtosis: 28.413018422874092
    
 3. **Diagrama de flujo**
    
