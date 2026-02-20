@@ -11,7 +11,7 @@ Se ingreso a la base de datos physionet y se descargo una señal fisiologica ECG
 <img width="884" height="386" alt="image" src="https://github.com/user-attachments/assets/96484553-f12d-457f-94bc-e6902dffa283" />
 
 
-2. **Calculos estadisticos descriptivos**
+2. **Cálculos estadísticos descriptivos**
 Se calcularon los datos estadisticos de dos maneras diferentes, la primera vez que se dessarrolló programando las formulas  haciendo uso de las funciones predefinidas con python y la segunda vez programando las funciones desde cero.
 
 **PARTE 1**
