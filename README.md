@@ -209,17 +209,5 @@ Se calculo la relacion señal ruido para cada caso de contaminacion con los ruid
 | **Asimetría**          | Negativa| Positiva| D1 cola hacia la izquierda; D2 hacia la derecha|
 | **Curtosis**           | 28.41   | 9.78   | D1 tiene más valores extremos que D2 
 
-## Graficas
 
-**ECG DESCARGADO**
-
-<img width="533" height="238" alt="REGISTRO 1" src="https://github.com/user-attachments/assets/ed2412df-e38a-48cf-98b6-9d69cdb2146f" />
-
-**ECG CAPTURADO**
-
-<img width="432" height="341" alt="REGISTRO 2" src="https://github.com/user-attachments/assets/ed557871-705f-4540-aae1-da917e3de724" />
-
-**RUIDOS EN LA SEÑAL ECG**
-
-<img width="537" height="271" alt="REGISTRO 3" src="https://github.com/user-attachments/assets/be3bea48-8241-4eda-89ce-95bbcbcdd120" />
 
