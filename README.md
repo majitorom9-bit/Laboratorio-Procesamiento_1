@@ -8,6 +8,8 @@ Analizar estadísticamente una señal fisiológica, calcular sus principales par
 1. **Obtener la señal**
 Se ingreso a la base de datos physionet y se descargo una señal fisiologica ECG, se utilizo la señal del registro: https://physionet.org/content/pwave/1.0.0/#files-panel el cual contiene registros de electrocardiograma (ECG) provenientes de la "MIT-BIH Arrhythmia Database". Este conjunto se caracteriza por incluir anotaciones detalladas de la onda P, que representa la despolarización auricular, lo que permite un análisis más preciso de la actividad eléctrica del corazón y facilita el estudio de alteraciones del ritmo cardíaco. Finalmente se graficó la señal en el dominio del tiempo.
 
+**Gráfico de la señal descargada**
+
 <img width="884" height="386" alt="image" src="https://github.com/user-attachments/assets/96484553-f12d-457f-94bc-e6902dffa283" />
 
 
