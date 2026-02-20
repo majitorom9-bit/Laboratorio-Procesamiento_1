@@ -139,7 +139,7 @@ Finalmente los resultados obtenidos fueron:
 - Coeficiente de variacion: 63.08%
 - Curtosis: 28.413018422874092
    
-3. **Diagrama de flujo**
+3. **Diagrama de flujo parte A**
    
    ![DIAGRAMA 1](https://github.com/user-attachments/assets/a5d50f62-9afa-4b1f-afad-5badc50feef4)
 
@@ -151,16 +151,18 @@ Se generó una señal Electrocardiográfica (ECG), utilizando el  generador de s
 Se capturo la señal utilizando el microcontrolador STM32 Black Pill, usando su módulo ADC, para lograr convertir la señal análoga en  digital que luego se importo a Python mediante el puerto serial, donde luego los valores fueron convertidos a voltaje para que pudieran ser graficados por medio de una interfaz gráfica en tiempo real mediante matplotlib y  finalmente se guardaron  en un archivo CSV para su posterior análisis.
 3. **Calculos estadisticos**
 Se repitieron los cálculos de la parte A y los resultados para esta señal fueron:
- - Media de la señal: 0.8804996336996337 
- - Desviacion estandar: 0.4758191679603716 
- - Coeficeinte de variacion: 54.04%
- - Asimetria (Skewness): Positiva
- - Curtosis: 9.784939579218962
- - Histograma
+-Media: 0.8804996336996334
+-Mediana: 0.8356776556776556
+-Desviacion estandar: 0.47581916796037166
+-Asimetria: 1.9102376871657396
+-Coeficiente de variacion: 54.04%
+-Curtosis: 9.784939579218957
+ - Histograma obtenido:
 
-   <img width="432" height="335" alt="Histograma 2" src="https://github.com/user-attachments/assets/b303bf62-a2e3-473b-a829-0104b55ea7a7" />
+ <img width="826" height="597" alt="image" src="https://github.com/user-attachments/assets/657ecce0-629a-4833-9be9-9d6270f4d392" />
+
                      
-4. **Diagrama de Flujo**
+4. **Diagrama de Flujo parte B**
 
 ![DIAGRAMA 2](https://github.com/user-attachments/assets/6f98a869-dc68-4e3e-9e9b-35ce3ea394c7)
 
