@@ -168,11 +168,18 @@ Se repitieron los cálculos de la parte A y los resultados para esta señal fuer
 
 ### PARTE C
 1.**Relacion Señal Ruido**
-La señal fue contaminada con funciones diferentes añadiendo 3 distintos tipos de ruido.
-- Ruido Gaussiano
-- Ruido Impulso
-- Ruido Tipo Artefacto
+
+La señal fue contaminada con programación en python donde se implementaron funciones para  añadir los tres diferentes tipos de ruido.
+- Gaussiano: Para simular el ruido aleatorio común
+- Por impulso: Representando picos repentinos de alta amplitud
+- Tipo artefacto: Emulando distorsiones producidas por interferencias externas
+
+  El resultado de las gráficas con respecto a los ruidos fue:
+
+  <img width="1178" height="562" alt="image" src="https://github.com/user-attachments/assets/e3069f5d-c2f4-4e88-ae1f-38d88d6af0e6" />
+
 2. **Calculos del SNR**
+  SNR: Signal-to-Noise Ratio o relación señal-ruido es una medida que indica qué tan fuerte es una señal útil en comparación con el ruido que la afecta, se calcula como el cociente entre la potencia de la señal y la potencia del ruido, y normalmente se expresa en decibeles (dB). Un SNR alto significa que la señal es clara y tiene poca interferencia, mientras que un SNR bajo indica que el ruido está afectando significativamente la calidad de la señal.
 Se calculo la relacion señal ruido para cada caso de contaminacion con lso ruidos antes mencionados
   - SNR Ruido Gaussiano: 8.39 dB
   - SNR Ruido Impulso: 2.49 dB
