@@ -1,6 +1,6 @@
 # Laboratorio-Procesamiento_1
 
-## Objetivo de la practica 
+## Objetivo de la práctica
 Analizar estadísticamente una señal fisiológica, calcular sus principales parámetros descriptivos, y comparar los resultados entre señales capturadas con hardware, aplicando también el concepto de relación señal-ruido.
 
 ## Procedimiento 
