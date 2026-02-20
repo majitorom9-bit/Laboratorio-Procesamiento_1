@@ -4,13 +4,14 @@
 Analizar estadísticamente una señal fisiológica, calcular sus principales parámetros descriptivos, y comparar los resultados entre señales capturadas con hardware, aplicando también el concepto de relación señal-ruido.
 
 ## Procedimiento 
-Para el desarrollo de la práctica, se realizó la descarga de una señal fisiológica desde el sitio de physionet (https://physionet.org/content/pwave/1.0.0/100.dat) muestreadas a 360 Hz, con el objetivo de calcular los parámetros estadísticos que permiten describirla cuantitativamente, explicando la utilidad y el significado de cada uno de ellos dentro del análisis de las señales.
-Las señales obtenidas en un entorno real, como es el caso de las señales biomédicas, se caracterizan por contener información relevante asociada a parámetros como la amplitud y la frecuencia. No obstante, también pueden incluir componentes no deseados que alteran su comportamiento, conocidos como ruido, los cuales pueden afectar la interpretación adecuada de la señal. 
 ### PARTE A 
 1. **Obtener la señal**
 Se ingreso a la base de datos physionet y se descargo una señal fisiologica ECG, se utilizo la señal del registro: https://physionet.org/content/pwave/1.0.0/#files-panel el cual contiene registros de electrocardiograma (ECG) provenientes de la "MIT-BIH Arrhythmia Database". Este conjunto se caracteriza por incluir anotaciones detalladas de la onda P, que representa la despolarización auricular, lo que permite un análisis más preciso de la actividad eléctrica del corazón y facilita el estudio de alteraciones del ritmo cardíaco. Finalmente se graficó la señal en el dominio del tiempo.
 
-2. **Calculos estadisticos descriptivos**
+<img width="884" height="386" alt="image" src="https://github.com/user-attachments/assets/96484553-f12d-457f-94bc-e6902dffa283" />
+
+
+3. **Calculos estadisticos descriptivos**
 Se calcularon los datos estadisticos de dos maneras diferentes, la primera vez que se dessarrolló programando las formulas  haciendo uso de las funciones predefinidas con python y la segunda vez programando las funciones desde cero.
 
 **PARTE 1**
