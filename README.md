@@ -149,7 +149,7 @@ Se generó una señal Electrocardiográfica (ECG), utilizando el  generador de s
 2. **Captura de la señal**
 Se capturo la señal utilizando el microcontrolador STM32 Black Pill, usando su módulo ADC, para lograr convertir la señal análoga en  digital que luego se importo a Python mediante el puerto serial, donde luego los valores fueron convertidos a voltaje para que pudieran ser graficados por medio de una interfaz gráfica en tiempo real mediante matplotlib y  finalmente se guardaron  en un archivo CSV para su posterior análisis.
 3. **Calculos estadisticos**
-Se calcularon los datos estadisticos encontrados en la parte y A y se compararon entre ellos.
+Se repitieron los cálculos de la parte A y los resultados para esta señal fueron:
  - Media de la señal: 0.8804996336996337 
  - Desviacion estandar: 0.4758191679603716 
  - Coeficeinte de variacion: 54.04%
