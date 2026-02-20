@@ -149,7 +149,13 @@ Finalmente los resultados obtenidos fueron:
 Se generó una señal Electrocardiográfica (ECG), utilizando el  generador de señales biologicas.
 2. **Captura de la señal**
 Se capturo la señal utilizando el microcontrolador STM32 Black Pill, usando su módulo ADC, para lograr convertir la señal análoga en  digital que luego se importo a Python mediante el puerto serial, donde luego los valores fueron convertidos a voltaje para que pudieran ser graficados por medio de una interfaz gráfica en tiempo real mediante matplotlib y  finalmente se guardaron  en un archivo CSV para su posterior análisis.
-3. **Calculos estadisticos**
+
+Gráfico de la señal capturada
+
+<img width="432" height="341" alt="REGISTRO 2" src="https://github.com/user-attachments/assets/ed557871-705f-4540-aae1-da917e3de724" />
+
+
+4. **Calculos estadisticos**
 Se repitieron los cálculos de la parte A y los resultados para esta señal fueron:
 -Media: 0.8804996336996334
 -Mediana: 0.8356776556776556
