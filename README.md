@@ -188,7 +188,7 @@ La señal fue contaminada con programación en python donde se implementaron fun
 
 2. **Calculos del SNR**
   SNR: Signal-to-Noise Ratio o relación señal-ruido es una medida que indica qué tan fuerte es una señal útil en comparación con el ruido que la afecta, se calcula como el cociente entre la potencia de la señal y la potencia del ruido, y normalmente se expresa en decibeles (dB). Un SNR alto significa que la señal es clara y tiene poca interferencia, mientras que un SNR bajo indica que el ruido está afectando significativamente la calidad de la señal.
-Se calculo la relacion señal ruido para cada caso de contaminacion con lso ruidos antes mencionados
+Se calculo la relacion señal ruido para cada caso de contaminacion con los ruidos antes mencionados
   - SNR Ruido Gaussiano: 8.39 dB
   - SNR Ruido Impulso: 2.49 dB
   - SNR Ruido Tipo Artefacto: 0.57 dB
