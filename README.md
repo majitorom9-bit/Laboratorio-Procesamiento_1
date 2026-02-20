@@ -129,7 +129,7 @@ curtosis = (suma_cuarta / n) / (varianza ** 2)
 print(f"Curtosis: {curtosis}")
 
  ```
-Finalemnte los resultados obtenidos fueron: 
+Finalmente los resultados obtenidos fueron: 
 
 - Media: -0.30629897692306546
 - Mediana: -0.335
